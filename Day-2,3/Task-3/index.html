@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delizio Ristorante - Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f5f0;
+      margin: 0;
+      padding: 0;
+    }
+    .menu-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #d35400;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    .menu-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    .menu-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .item-info {
+      flex: 1;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+    .item-description {
+      color: #555;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1>Delizio Ristorante</h1>
+
+    <!-- Appetizers -->
+    <h2>Appetizers</h2>
+    <div class="menu-item">
+      <img src="chicken quesadillas.jpg" 
+      alt="Chicken Quesadillas">
+      <div class="item-info">
+        <div class="item-header">
+          <span>Chicken Quesadillas</span>
+          <span>₹120</span>
+        </div>
+        <p class="item-description">Toasted bread topped with garlic butter and fresh herbs.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="Boneless Chicken.jpg" alt="Bruschetta">
+      <div class="item-info">
+        <div class="item-header">
+          <span>Boneless Chicken</span>
+          <span>₹150</span>
+        </div>
+        <p class="item-description">Crispy bread with diced tomatoes, basil, and olive oil.</p>
+      </div>
+    </div>
+
+    <!-- Main Courses -->
+    <h2>Main Courses</h2>
+    <div class="menu-item">
+      <img src="Spicy Chicken.jpg" alt="Margherita Pizza">
+      <div class="item-info">
+        <div class="item-header">
+          <span>Spicy Chicken</span>
+          <span>₹150</span>
+        </div>
+        <p class="item-description">Classic pizza with tomato, mozzarella, and fresh basil.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="fish.jpg" alt="Spaghetti Alfredo">
+      <div class="item-info">
+        <div class="item-header">
+          <span>Grilled Salmon Fish</span>
+          <span>₹180</span>
+        </div>
+        <p class="item-description">Creamy Alfredo pasta tossed with parmesan and herbs.</p>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <img src="red velvet cake.jpg" alt="Tiramisu">
+      <div class="item-info">
+        <div class="item-header">
+          <span>Red Velvet Cake</span>
+          <span>₹100</span>
+        </div>
+        <p class="item-description">Layered dessert with coffee-soaked ladyfingers and mascarpone.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="white forest cake.jpg" alt="Chocolate Lava Cake">
+      <div class="item-info">
+        <div class="item-header">
+          <span>White Forest Cake</span>
+          <span>₹80</span>
+        </div>
+        <p class="item-description">Warm chocolate cake with a rich molten center.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

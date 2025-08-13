@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 400px;
+            animation: slideIn 0.8s ease-in-out;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #ff758c;
+            font-size: 24px;
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ff758c;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: 0.3s;
+            background: #fff0f3;
+            text-align: center;
+        }
+        input:focus {
+            border-color: #ff5470;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 84, 112, 0.5);
+        }
+        button {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #ff5470, #ff82a9);
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+        #successMessage {
+            color: #28a745;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p id="successMessage" class="hidden">Registration successful!</p>
+    </div>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            document.getElementById("registrationForm").reset(); 
+            document.getElementById("successMessage").classList.remove("hidden"); 
+        });
+    </script>
+</body>
+</html>
