@@ -1,0 +1,17 @@
+.student-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .student-card:hover {
+    transform: scale(1.05);
+  }
+  
